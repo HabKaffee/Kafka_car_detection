@@ -30,12 +30,12 @@ def consume_data():
     iterations = 0
     while True:
         msg = consumer.poll(2000)
-
         if msg is not None:
             data = None
             try:
                 data = json.loads(msg.value().decode('utf-8'))
             except json.decoder.JSONDecodeError:
+                print("Decode err")
                 sleep(1)
                 continue
             print(data)
