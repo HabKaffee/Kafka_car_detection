@@ -7,6 +7,8 @@ or
 ```shell
 bash ./set_up_env.sh
 ```
+NOTE: Dataset is donwloading from Google Drive because it is reduced dataset https://www.kaggle.com/datasets/javiersanchezsoriano/traffic-images-captured-from-uavs (35 GB reduced to 5 GB)
+
 To run app enter following commands
 ```shell
 source venv/bin/activate
